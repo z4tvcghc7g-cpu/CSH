@@ -1,0 +1,210 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보건관리자 OOO | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        body { font-family: 'Noto Sans KR', sans-serif; -webkit-tap-highlight-color: transparent; }
+        .nav-blur { backdrop-filter: blur(8px); background-color: rgba(255, 255, 255, 0.8); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 상단 네비게이션 -->
+    <nav class="fixed top-0 w-full z-50 nav-blur border-b border-gray-200">
+        <div class="max-w-screen-md mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold text-blue-700">HealthManager.</span>
+            <div class="space-x-4">
+                <a href="#about" class="text-sm font-medium hover:text-blue-600 transition">소개</a>
+                <a href="#work" class="text-sm font-medium hover:text-blue-600 transition">업무</a>
+                <a href="#archive" class="text-sm font-medium hover:text-blue-600 transition">자료실</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section class="pt-28 pb-12 px-4 bg-gradient-to-br from-blue-600 to-emerald-500 text-white">
+        <div class="max-w-screen-md mx-auto text-center">
+            <div class="w-24 h-24 bg-white rounded-full mx-auto mb-6 p-1">
+                <div class="w-full h-full rounded-full bg-gray-200 flex items-center justify-center text-blue-600 overflow-hidden">
+                    <i class="fas fa-user-md text-4xl"></i>
+                </div>
+            </div>
+            <h1 class="text-2xl font-bold mb-2">근로자의 건강이 현장의 안전입니다</h1>
+            <p class="text-blue-50 font-light mb-6 text-sm">건설현장 보건관리자 5년차, OOO입니다.</p>
+            <div class="flex justify-center space-x-3">
+                <a href="mailto:example@email.com" class="bg-white text-blue-600 px-5 py-2 rounded-full text-sm font-bold shadow-lg">문의하기</a>
+                <a href="#work" class="bg-blue-700 text-white px-5 py-2 rounded-full text-sm font-bold shadow-lg border border-blue-400">경력보기</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 주요 수치 (Stats) -->
+    <section class="py-8 px-4 -mt-6">
+        <div class="max-w-screen-md mx-auto grid grid-cols-3 gap-3">
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 text-center">
+                <p class="text-xs text-gray-500 mb-1">진행 현장</p>
+                <p class="text-xl font-bold text-blue-600">08건</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 text-center">
+                <p class="text-xs text-gray-500 mb-1">누적 근로자</p>
+                <p class="text-xl font-bold text-blue-600">3.2k</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 text-center">
+                <p class="text-xs text-gray-500 mb-1">직업병 Zero</p>
+                <p class="text-xl font-bold text-blue-600">100%</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 소개 섹션 -->
+    <section id="about" class="py-12 px-4 max-w-screen-md mx-auto">
+        <h2 class="text-xl font-bold mb-6 flex items-center">
+            <span class="w-1 h-6 bg-blue-600 rounded-full mr-2"></span>
+            전문가 프로필
+        </h2>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+            <div>
+                <p class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">Qualifications</p>
+                <ul class="grid grid-cols-1 gap-2">
+                    <li class="flex items-center text-sm"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> 산업위생관리기사</li>
+                    <li class="flex items-center text-sm"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> 인간공학기사</li>
+                    <li class="flex items-center text-sm"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> 심폐소생술(BLS) 강사</li>
+                </ul>
+            </div>
+            <hr class="border-gray-50">
+            <div>
+                <p class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">Specialties</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-lg text-xs font-medium">MSDS 관리</span>
+                    <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-lg text-xs font-medium">작업환경측정</span>
+                    <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-lg text-xs font-medium">특수건강검진</span>
+                    <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-lg text-xs font-medium">폭염 대응</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 업무 포트폴리오 -->
+    <section id="work" class="py-12 px-4 bg-gray-100">
+        <div class="max-w-screen-md mx-auto">
+            <h2 class="text-xl font-bold mb-6 flex items-center">
+                <span class="w-1 h-6 bg-blue-600 rounded-full mr-2"></span>
+                관리 사례 (Portfolio)
+            </h2>
+            <div class="space-y-4">
+                <!-- 카드 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200">
+                    <div class="h-40 bg-gray-300 flex items-center justify-center text-gray-500">
+                        <i class="fas fa-sun text-4xl"></i>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-orange-500 bg-orange-50 px-2 py-1 rounded-md">폭염대책</span>
+                        <h3 class="text-lg font-bold mt-2">고령근로자 온열질환 집중관리</h3>
+                        <p class="text-sm text-gray-600 mt-2">스마트 밴드를 활용한 심박수 모니터링 및 현장 내 휴게실 개선 프로젝트</p>
+                    </div>
+                </div>
+                <!-- 카드 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200">
+                    <div class="h-40 bg-gray-300 flex items-center justify-center text-gray-500">
+                        <i class="fas fa-mask text-4xl"></i>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-blue-500 bg-blue-50 px-2 py-1 rounded-md">환경관리</span>
+                        <h3 class="text-lg font-bold mt-2">터널 내 분진 및 환기 시스템 개선</h3>
+                        <p class="text-sm text-gray-600 mt-2">실시간 미세먼지 측정기 설치 및 환기 팬 자동화 제어 시스템 도입 사례</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 보건 자료실 -->
+    <section id="archive" class="py-12 px-4 max-w-screen-md mx-auto">
+        <h2 class="text-xl font-bold mb-6 flex items-center">
+            <span class="w-1 h-6 bg-blue-600 rounded-full mr-2"></span>
+            보건 자료실
+        </h2>
+        <div class="grid grid-cols-1 gap-3">
+            <button class="flex items-center p-4 bg-white rounded-2xl shadow-sm border border-gray-100 active:scale-95 transition text-left">
+                <div class="w-10 h-10 bg-red-50 text-red-500 rounded-xl flex items-center justify-center mr-4">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="flex-1">
+                    <p class="font-medium text-sm">신규입사자 보건교육 PPT</p>
+                    <p class="text-xs text-gray-400">PDF | 4.2 MB</p>
+                </div>
+                <i class="fas fa-download text-gray-300"></i>
+            </button>
+            <button class="flex items-center p-4 bg-white rounded-2xl shadow-sm border border-gray-100 active:scale-95 transition text-left">
+                <div class="w-10 h-10 bg-green-50 text-green-500 rounded-xl flex items-center justify-center mr-4">
+                    <i class="fas fa-file-excel"></i>
+                </div>
+                <div class="flex-1">
+                    <p class="font-medium text-sm">MSDS 관리 대장 양식</p>
+                    <p class="text-xs text-gray-400">XLSX | 150 KB</p>
+                </div>
+                <i class="fas fa-download text-gray-300"></i>
+            </button>
+            <button class="flex items-center p-4 bg-white rounded-2xl shadow-sm border border-gray-100 active:scale-95 transition text-left">
+                <div class="w-10 h-10 bg-blue-50 text-blue-500 rounded-xl flex items-center justify-center mr-4">
+                    <i class="fas fa-image"></i>
+                </div>
+                <div class="flex-1">
+                    <p class="font-medium text-sm">현장 보건 표지판 시안</p>
+                    <p class="text-xs text-gray-400">AI / JPG | 12 MB</p>
+                </div>
+                <i class="fas fa-download text-gray-300"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- 하단 정보 -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-screen-md mx-auto text-center">
+            <h2 class="text-lg font-bold mb-4">함께 일하고 싶은 보건관리자가 되겠습니다</h2>
+            <p class="text-gray-400 text-xs leading-loose">
+                이메일: example@email.com<br>
+                연락처: 010-1234-5678<br>
+                LinkedIn: @healthmanager_ooo
+            </p>
+            <div class="flex justify-center space-x-6 mt-8">
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fas fa-envelope text-xl"></i></a>
+            </div>
+            <p class="text-gray-600 text-[10px] mt-8">© 2024 HealthManager Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 알림창 (데모용) -->
+    <div id="modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-[100] px-4">
+        <div class="bg-white rounded-3xl p-6 w-full max-w-xs text-center">
+            <i class="fas fa-info-circle text-blue-500 text-3xl mb-4"></i>
+            <p id="modalText" class="text-sm font-medium mb-6">준비 중인 기능입니다.</p>
+            <button onclick="closeModal()" class="w-full bg-blue-600 text-white py-3 rounded-2xl font-bold">확인</button>
+        </div>
+    </div>
+
+    <script>
+        function showModal(text) {
+            document.getElementById('modalText').innerText = text;
+            document.getElementById('modal').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+        // 다운로드 버튼 등에 이벤트 연결
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', () => showModal('실제 파일이 업로드되면 다운로드가 시작됩니다.'));
+        });
+    </script>
+</body>
+</html>
+
+```
